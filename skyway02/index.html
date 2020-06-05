@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myVideoChat</title>
+  </head>
+  <body>
+    <!-- video -->
+    <video id="my-video" autoplay></video>
+    <video id="their-video" autoplay></video>
+
+    <!-- 自分の部屋のid表示 -->
+    <p>Your id: <span id="my-id">...</span></p>
+
+    <!-- 相手のid入力欄 -->
+    <form id="make-call">
+      <input type="text" id="callto-id" />
+      <button type="submit" id="call-btn">Call</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.webrtc.ecl.ntt.com/skyway-latest.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
